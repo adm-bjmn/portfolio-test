@@ -4,13 +4,13 @@
   <section class = style>
     <div class = 'top-container'>
       <div class = 'title'> 
-        <h1 class = "dark:font-dark">Adm.Bjmn</h1>
+        <h1 class = "dark:title-dark ">Adm.Bjmn</h1>
       </div>
       <div class = 'line1'> 
-        <h4 >Process driven, creative software engineer with a</h4>
-        <h4 style = ' padding-left: 20px;'>focus on minimalistic, useful and </h4>
-        <h4 style = ' padding-left: 50px;'>thoughtful experiences.</h4>
-        <h4 style = ' padding-left: 50px;'></h4>
+        <h4 class="dark:catch-dark">Full Stack Django Dancer /</h4>
+        <h4 class="dark:catch-dark" style = ' padding-left: 50px;'> Backend Developer / </h4>
+        <h4 class="dark:catch-dark" style = ' padding-left: 100px;'>Software Engineer.</h4>
+        <h4 class="dark:catch-dark" style = ' padding-left: 50px;'></h4>
         <br>
 
       </div>
@@ -18,143 +18,192 @@
     </div>
   </section>
 
-  <section class = style>
-    <div class = 'body-container'>
-      <div class = 'about-wrapper'>
-        <div class = 'about_title'> <h2> About </h2></div>
+<section class = style>
+  <div class = 'body-container'>
+    <div class = 'about-wrapper'>
+      <div class = 'about_title'> <h2 class="dark:h-dark"> About </h2></div>
         <div class = 'about_content'>
-          <p> this is a paragraph</p>
-          <p> this is another paragraph</p>
-          <p> Djagno web developer with 10 years oas management experience
-          <a target = "_blank" href="{% static '/images/resume.pdf' %}">DOwnload Resume</a></p>
+          <p class="dark:p-dark"> I have a great admiration for all things that work efficienlty and gracefully.</br>
+            I’m a firm believer in the notion that good design is achieved not when there is nothing left to add,
+             but when there’s nothing left to be taken away.
+            </p></br>
+          <p class="dark:p-dark">I apply this process of deep consideration to the many types of ‘things’ that I build and I fly the flag of deliberate 
+            design with great pride as I embark on a daring crusade to 'Marie Kondo' the heck out of the whole online experience!</p></br>
+          <p class="dark:p-dark"> I build my buisness logic in Python while leaning heavily on my 10 year background as a process consultant to solve real world problems with zero faff...</p>
+          </br>
+          <div class = 'skills'>
+            <ul>
+              <li><img id = 'django' src= "{% static 'img/django.png' %}"></li>
+              {% if is_dark_theme %}
+              <li><img id = 'python' src= "{% static 'img/python_white.png' %}"></li>
+              {% else %}
+              <li><img id = 'python' src= "{% static 'img/python.png' %}"></li>
+              {% endif %}
+              <li><img id = 'sql' src= "{% static 'img/sql.png' %}"></li>
+              <li><img id = 'postgresql' src= "{% static 'img/postgresql.png' %}"></li>
+              <li><img id = 'html' src= "{% static 'img/html.png' %}"></li>
+              <li><img id = 'css' src= "{% static 'img/css.png' %}"></li>
+              <li><img id = 'bootstrap' src= "{% static 'img/bootstrap.png' %}"></li>
+              {% if is_dark_theme %}
+              <li><img id = 'git' src= "{% static 'img/git_white.png' %}"></li>
+              {% else %}
+              <li><img id = 'git' src= "{% static 'img/git.png' %}"></li>
+              {% endif %}
+              <li><img id = 'docker' src= "{% static 'img/docker.png' %}"></li>
+              <li><img id = 'aws' src= "{% static 'img/cloud.png' %}"></li>
+              <li><img id = 'railway' src= "{% static 'img/railway.png' %}"></li>
+            </ul>
+          </div>
         </div>
-         
-        <div class = 'skills'>
-          <ul>
-            <li><img id = 'django' src= "{% static 'media/django.png' %}"></li>
-            {% if is_dark_theme %}
-            <li><img id = 'python' src= "{% static 'media/python_white.png' %}"></li>
-            {% else %}
-            <li><img id = 'python' src= "{% static 'media/python.png' %}"></li>
-            {% endif %}
-            <li><img id = 'sql' src= "{% static 'media/sql.png' %}"></li>
-            <li><img id = 'html' src= "{% static 'media/html.png' %}"></li>
-            <li><img id = 'html' src= "{% static 'media/css.png' %}"></li>
-            <li><img id = 'tail' src= "{% static 'media/tailwind.png' %}"></li>
-            {% if is_dark_theme %}
-            <li><img id = 'git' src= "{% static 'media/git_white.png' %}"></li>
-            {% else %}
-            <li><img id = 'git' src= "{% static 'media/git.png' %}"></li>
-            {% endif %}
-            <li><img id = 'docker' src= "{% static 'media/docker.png' %}"></li>
+        <div>
+          <ul class='button-list'>
+          <li class = 'project_button_wrapper'><a class = 'project_button dark:text-black' target = "_blank" href="{% static '/images/resume.pdf' %}">Resume</a></li>
+          <li class = 'project_button_wrapper'><a class = 'project_button dark:text-black' target = "_blank" href="{% static '/images/resume.pdf' %}">Git Hub </a></li>
+          <li class = 'project_button_wrapper'><a class = 'project_button dark:text-black' target = "_blank" href="{% static '/images/resume.pdf' %}">LinkedIn</a></li>
+          <li class = 'project_button_wrapper'><a class = 'project_button dark:text-black' target = "_blank" href="#contact">Contact</a></li>
           </ul>
         </div>
+      </div>
     </div>
+  </br>
   </section>
 
-  <section class = style>
+  <section class ='style' style='border-bottom-right-radius: 20%;'>
     <div class = 'body-container'>
-      <div><h2>Examples of work</h2></div>
+      <div><h2 class="dark:h-dark">Examples of work</h2></div>
       <div class = 'examples_wrapper'>
-
-        <div>
-          <div class = 'post_wrapper'>
-            <div class = 'project_title'><h1>01</h1>
-              <h4>Web apps</h4></div>
-              <div class = 'project_button_wrapper'><a class = 'project_button dark:text-black'' href ="{% url 'data_work' %}">View project</a></div>
-          </div>
-          <div class = 'hide'>
-            <div class = 'post_PT'>
-              <p> text </p>
+  <div id="carouselExampleIndicators" class="carousel slide" >
+    <ol class="carousel-indicators">
+      <li data-target="#" data-slide-to="0" class="active"></li>
+      <li data-target="#" data-slide-to="1"></li>
+      <li data-target="#" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class = 'post_wrapper'>
+          <div><h1 class="dark:p-dark">01</h1></div>
+          <div>
+            <div style='padding-left:50px;'>
+            <h4 class="dark:p-dark" >Developing Niche Solutions</h4>
             </div>
-            <div class = 'Tn'>
-              <img class = 'thumnail' src= "{% static 'media/image.JPEG' %}">
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class = 'post_wrapper'>
-            <div class = 'project_title'><h1>02</h1>
-              <h4>Business tools</h4></div>
-              <div class = 'project_button_wrapper'><a class = 'project_button dark:text-black'' href ="{% url 'data_work' %}">View project</a></div>
-          </div>
-          <div class = 'hide'>
-            <div class = 'post_PT'>
-              <p> text </p>
-            </div>
-            <div class = 'Tn'>
-              <img class = 'thumnail' src= "{% static 'media/image.JPEG' %}">
-            </div>
-          </div>
-        </div>
-
-
-        <div>
-          <div class = 'post_wrapper'>
-            <div class = 'project_title'><h1>03</h1>
-            <h4>Python Proficiency</h4></div>
-            <div class = 'project_button_wrapper'><a class = 'project_button dark:text-black'' href ="{% url 'data_work' %}">View project</a></div>
-          </div>
-          <div class = 'hide'>
-            <div class = 'post_PT'>
-              <p> More suited to potential collaborators or anyone looking to hire me as a 
-                software engineer this section demonstrates my general house keeping and good 
-                code etiquette. From these basic python projects you will see my ability to write clean 
-                and maintainable code that sticks strictly to the PEP 8 guidelines and 
-                maintains tidy and understandable logic throughout.
-                Should you wish to play with these projects they have been containerised using 
-                docker and instructions can be found in the repos on my GitHub which will be linked in the view project page.
-                </p>
-            </div>
-            <div class = 'Tn'>
-              <img class = 'thumnail' src= "{% static 'media/image.JPEG' %}">
+            <div class='project-content'>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/5O0YDHiosD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </br>
+              <div class='project-text'>
+                <h6 class="dark:p-dark">The Maybe Pile</h6>
+                <p class="dark:p-dark"> A new and intutive way to to explore over 10000 classic literature titles.</p>
+                </br>
+                <h6 class="dark:p-dark">Project Features:</h6>
+                <ul style='padding-left:50px;'>
+                  <li class="dark:p-dark">Relationional database</li>
+                  <li class="dark:p-dark">User Authentication and Profiles</li>
+                  <li class="dark:p-dark">Web scraping algorithm</li>
+                  <li class="dark:p-dark">Clean UX/UI design</li>
+                  <li>
+              </div>
             </div>
           </div>
         </div>
-
-        <div>
-          <div class = 'post_wrapper'>
-            <div class = 'project_title'><h1>04</h1>
-              <h4>Data work</h4></div>
-            <div class = 'project_button_wrapper'><a class = 'project_button dark:text-black'' href ="{% url 'data_work' %}">View project</a></div>
-          </div>
-          <div class = 'hide'>
-            <div class = 'post_PT'>
-              <p>  Much like every other 'data scientist' out there, I could quite easiliy go on about the work I've done with such and such a data set 
-                and what wonderful descoveries I have made, but no matter which data set I may dismantle before your very eyes, 
-                it wouldn't stand to mean much when every person on the planet has access to the eextact same training data on Kaggle.com.
-                It might suffice to say then that I have a spent a great many hours inside 
-                the Jupiter notebooks platform learning how to develop the necessary skills for real world use, 
-                honing my data wrangling skills in order to imporove my own apps while improving my 
-                data cleaning, making high quality visualisation and making use of
-                machine learning algorithms to take a deep dive into data in pursuit of improved 
-                understanding and insights into trends and relationships.
-                Click the view project button to the right for more information and a few example 
-                visualisations to help justify this claim and demonstrate my proficiency with Pandas 
-                and other libraries such as Seaborn, SciPy, MatPlotLib and skLearn. 
-              </p>
-            </div>
-            <div class = 'Tn'>
-              <img class = 'thumnail' src= "{% static 'media/image.JPEG' %}">
-            </div>
-          </div>
-        </div>
-
-
       </div>
-    </div>
-  </section>
-
-
-
-  <section>
-    <div class = 'body-container'>
-      <div class = 'contact'> 
-        <a href="{% url 'contact' %}"a><h1 class = "font-title text-[#333333]">Connect</h1></a>
+      <div class="carousel-item">
+        <div class = 'post_wrapper'>
+          <div><h1 class="dark:p-dark">02</h1></div>
+          <div>
+            <div style='padding-left:50px;'>
+            <h4 class="dark:p-dark">Improving Existing Tools</h4>
+            </div>
+            <div class='project-content'>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/5O0YDHiosD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </br>
+              <div class='project-text'>
+                <h6 class="dark:p-dark">Sams Dyno</h6>
+                <p class="dark:p-dark"> A drastic improvement on a small business's online presence.</p>
+                </br>
+                <h6 class="dark:p-dark">Project Features:</h6>
+                <ul style='padding-left:50px;'>
+                  <li class="dark:p-dark">Built to client specifications</li>
+                  <li class="dark:p-dark">Responsive design</li>
+                  <li class="dark:p-dark">Client facing CRUD operations</li>
+                  <li class="dark:p-dark">Simple interface</li>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="carousel-item">
+        <div class = 'post_wrapper'>
+          <div><h1 class="dark:p-dark">03</h1></div>
+          <div>
+            <div style='padding-left:50px;'>
+            <h4 class="dark:p-dark">Data Science / House Keeping</h4>
+            </div>
+            <div class='project-content'>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/5O0YDHiosD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </br>
+              <div class='project-text'>
+                <h6 class="dark:p-dark">Data Wrangling and Data cleaning</h6>
+                <p class="dark:p-dark"> A demonstration of skills in data</p>
+                </br>
+                <h6 class="dark:p-dark">Project Features:</h6>
+                <ul style='padding-left:50px;'>
+                  <li class="dark:p-dark">Jupyter Notebooks</li>
+                  <li class="dark:p-dark">Pandas & Numpy</li>
+                  <li class="dark:p-dark">Data visualisation</li>
+                  <li class="dark:p-dark">Machine Learning</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      {% if is_dark_theme %}
+      <span><img id='next-button' src= "{% static 'img/arrow-right-circle.svg' %}"></span></span>
+        <span class="sr-only">Next</span>
+        {% else %}
+      <span><img id='next-button' src= "{% static 'img/arrow-right-circle-dark.svg' %}"></span>
+        <span class="sr-only">Next</span>
+      {% endif %}
+    </a>
+  </div>
+</div>
+</section>
+
+<section>
+  <div class = 'body-container' id='contact'>
+    {% if name %}
+      <h3 class="dark:p-dark">Thanks so much {{ name }}! I'll be in touch!</h3>
+    {% else %}
+    <div class = 'contact_wrapper'>
+      <div class = 'form_wrapper'>
+          <form action="{% url 'home' %}" method="post" class='contact-form dark:bg-black'>
+            {% csrf_token %}
+            <label class="dark:h-dark">Name</label>
+            <input class = 'input-field dark:bg-[#59A29B] dark:border-white' type="text" name="Name">
+            <label class="dark:h-dark">Email</label>
+            <input class = 'input-field dark:bg-[#59A29B] dark:border-white' type="text" name="Email">
+            <label class="dark:h-dark">Message</label>
+            <textarea class = 'input-field dark:bg-[#59A29B] dark:border-white' type="text" name="Message"></textarea>
+            <input class = "submit-button dark:text-black" type = "submit" value="Send">
+          </form>
+      </div>
+      <div class = 'contact_title'><h1 class="dark:h-dark">Contact</h1>
+        <h4 class="dark:p-dark"> This form is linked directly to my 
+            inbox so please feel free to leave
+            a message and I'll get 
+            in touch as soon as possible!
+        </h4>
+        </br>
+        <div style='display:flex; flex-direction:row; justify-content:right;'>
+          <div><img id='iphone' src= "{% static 'img/phone.svg' %}"></div>
+          <div><p class="dark:p-dark">+44 7824 166 857</p></div>
+        </div>
+      </br>
+      </div>
+      </div>
+        {% endif %}
     </div>
-  </section>
+  </div>
+</section>
 
 
 

@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY =  'dev_key' 
+SECRET_KEY = 'dev_key'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -42,14 +42,34 @@ INSTALLED_APPS = [
 
     'index',
 
-    #tailwind
+    # tailwind
+    # run on clone --
+    # python3 manage.py tailwind install
+    # python3 manage.py tailwind start
     'tailwind',
     'theme',
     'django_browser_reload',
 ]
 
 TAILWIND_APP_NAME = 'theme'
-
+TAILWIND_CONFIG = {
+    'theme': {
+        # Your Tailwind theme configuration
+    },
+    'variants': {
+        'extend': {
+            'backgroundColor': ['dark'],
+            # Add your custom variants here
+        },
+    },
+    'plugins': [
+        # Your Tailwind plugins
+    ],
+    'additional_css': [
+        # Add your custom CSS file here
+        'theme/static/css/custom.css',
+    ],
+}
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
@@ -175,4 +195,3 @@ myaccount.google.com/apppasswords
 
 Always Check ports - google django send gmail.
 '''
-
