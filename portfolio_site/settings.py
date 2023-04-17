@@ -52,24 +52,7 @@ INSTALLED_APPS = [
 ]
 
 TAILWIND_APP_NAME = 'theme'
-TAILWIND_CONFIG = {
-    'theme': {
-        # Your Tailwind theme configuration
-    },
-    'variants': {
-        'extend': {
-            'backgroundColor': ['dark'],
-            # Add your custom variants here
-        },
-    },
-    'plugins': [
-        # Your Tailwind plugins
-    ],
-    'additional_css': [
-        # Add your custom CSS file here
-        'theme/static/css/custom.css',
-    ],
-}
+
 INTERNAL_IPS = [
     "127.0.0.1",
 ]

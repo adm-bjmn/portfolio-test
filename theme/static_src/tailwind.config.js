@@ -45,8 +45,8 @@ module.exports = {
     theme: {
         fontFamily: {
             title: ["Bebas Neue", "cursive"],
-            dark:["Creepster", "cursive"]
-          },
+            dark: ["Creepster", "cursive"]
+        },
         extend: {},
     },
     plugins: [
