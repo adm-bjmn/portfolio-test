@@ -23,6 +23,10 @@ body {
     justify-content: center;
 }
 
+.wf-loading body {
+    visibility: hidden;
+}
+
 h1 {
     font-size: 20vw;
 }
@@ -167,8 +171,9 @@ li {
 .about-wrapper {
     display: flex;
     flex-direction: row;
-    ;
     gap: 100px;
+    padding-bottom: 20px;
+
 }
 
 .about_content {
@@ -435,7 +440,7 @@ li {
 }
 
 /* move a particular box down upon small screen redsolutions */
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1000px) {
     .contact_wrapper {
         /* one columns */
         grid-template-columns: 1fr;
@@ -528,6 +533,50 @@ li {
 
     .about_content {
         padding-top: 5px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 89px;
+    }
+
+    h2 {
+        font-size: 55px;
+    }
+
+    h3 {
+        font-size: 34px;
+    }
+
+    h4 {
+        font-size: 28px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+    p,
+    li,
+    span,
+    label,
+    input,
+    textarea {
+        color: var(--sub_text_color);
+        font-family: var(--sub_font);
+        font-size: 18px;
+    }
+
+    .about-wrapper {
+        padding-bottom: 0px;
+
     }
 
 }
