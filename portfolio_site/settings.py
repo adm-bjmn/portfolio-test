@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,13 +22,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'dev_key'
+SECRET_KEY = config('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -146,7 +147,7 @@ MEDIA_URL = 'media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
+'''
 # Email Setting
 # Dev
 EMAIL_HOST = 'localhost'
@@ -154,27 +155,27 @@ EMAIL_PORT = '1025'
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = False
-# EMAIL_USEW_SSL = False
-
-# Prod
+# EMAIL_USE_SSL = False
 '''
+# Prod
+
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
-EMAIL_HOST_USER = 'adm.bjmn@gmail.com'
-EMAIL_HOST_PASSWORD = 'env'
+EMAIL_HOST_USER = config('EMAIL_ADDRESS')
+EMAIL_HOST_PASSWORD = config('EMAIL_PASSWORD')
 EMAIL_USE_TLS = True
-# EMAIL_USEW_SSL = False
+EMAIL_USE_SSL = False
 
-
-myaccount.goog.com/lesssecureapps
-myaccount.goog.com/DisplayUnlockCaptcha
+'''
+myaccount.google.com/lesssecureapps
+myaccount.google.com/DisplayUnlockCaptcha
 turn on.
 
 OR // 
 
 turn on two factor auth.
 myaccount.google.com/apppasswords
-
+create a new aopp and give it its own password
 
 Always Check ports - google django send gmail.
 '''

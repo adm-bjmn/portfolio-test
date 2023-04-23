@@ -12,7 +12,7 @@ def home(request):
             f'New Enquiry from {name}',  # subect
             message,  # message
             email,  # from
-            ['adm.bjmn@gamil.com'],  # to email
+            ['adm.bjmn@gmail.com'],  # to email
         )
         return render(request, 'index/home.html', {'name': name})
     else:
