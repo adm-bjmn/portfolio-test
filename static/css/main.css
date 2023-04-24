@@ -282,6 +282,12 @@ li {
 
 }
 
+#envelope {
+    padding-right: 8px;
+    height: 40px;
+    color: #333333;
+}
+
 .examples_wrapper {
     display: flex;
     flex-direction: column;
@@ -588,4 +594,13 @@ li {
     top: 10px;
     /* set a new top position */
 
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
 }

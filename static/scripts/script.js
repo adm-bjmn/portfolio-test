@@ -11,3 +11,9 @@ function checkVisibility() {
 
 window.addEventListener('scroll', checkVisibility);
 
+window.addEventListener('load', function () {
+    var loader = document.getElementById('loader');
+    setTimeout(function () {
+        loader.style.display = 'none';
+    }, 20);
+});
