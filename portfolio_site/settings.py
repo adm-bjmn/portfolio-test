@@ -176,7 +176,7 @@ myaccount.google.com/lesssecureapps
 myaccount.google.com/DisplayUnlockCaptcha
 turn on.
 
-OR // 
+OR //
 
 turn on two factor auth.
 myaccount.google.com/apppasswords
@@ -184,4 +184,4 @@ create a new aopp and give it its own password
 
 Always Check ports - google django send gmail.
 '''
-django_heroku.settings(locals(), staticfiles=False)
+django_heroku.settings(locals())
