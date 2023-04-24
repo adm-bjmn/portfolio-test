@@ -184,4 +184,4 @@ create a new aopp and give it its own password
 
 Always Check ports - google django send gmail.
 '''
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
