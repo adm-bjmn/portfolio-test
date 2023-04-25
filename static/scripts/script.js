@@ -32,3 +32,10 @@ function stopCurrentVideo() {
         video.pause();
     }
 }
+
+const myVideo = document.querySelector('#myVideo');
+
+nextButton.addEventListener('click', () => {
+    myVideo.pause();
+    // code to go to the next project
+});
