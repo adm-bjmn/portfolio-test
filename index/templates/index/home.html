@@ -115,7 +115,7 @@
             <h4 class="dark:text-[#59a29b]">Improving Existing Tools</h4>
             </div>
             <div class='project-content'>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/clDVcMkZd38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="http://www.youtube.com/embed/clDVcMkZd38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </br>
               <div class='project-text'>
                 <h6 class="dark:text-red-200">Sams Dyno</h6>
@@ -162,11 +162,11 @@
       </div>
     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
       {% if is_dark_theme %}
-      <span><img id='next-button' src= "{% static 'img/arrow-right-circle.svg' %}"></span></span>
-        <span class="sr-only">Next</span>
+      <button id='next-button'><img id='next-button' src= "{% static 'img/arrow-right-circle.svg' %}"></button>
+
         {% else %}
-      <button id='next-button'><img src= "{% static 'img/arrow-right-circle-dark.svg' %}"></button>
-        <span class="sr-only">Next</span>
+      <button id='next-button'><img id='next-button' src= "{% static 'img/arrow-right-circle-dark.svg' %}"></button>
+
       {% endif %}
     </a>
   </div>
