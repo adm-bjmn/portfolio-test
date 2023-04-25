@@ -17,3 +17,14 @@ window.addEventListener('load', function () {
         loader.style.display = 'none';
     }, 20);
 });
+
+const nextButton = document.querySelector('#next-button');
+nextButton.addEventListener('click', stopCurrentVideo);
+
+function stopCurrentVideo() {
+    const currentVideo = document.querySelector('video[playing]');
+    if (currentVideo) {
+        currentVideo.pause();
+        currentVideo.removeAttribute('playing');
+    }
+}
