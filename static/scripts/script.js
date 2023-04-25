@@ -19,12 +19,16 @@ window.addEventListener('load', function () {
 });
 
 const nextButton = document.querySelector('#next-button');
-nextButton.addEventListener('click', stopCurrentVideo);
+nextButton.addEventListener('click', function () {
+    console.log('Button clicked');
+    stopCurrentVideo();
+});
+
 
 function stopCurrentVideo() {
-    const currentVideo = document.querySelector('video[playing]');
-    if (currentVideo) {
-        currentVideo.pause();
-        currentVideo.removeAttribute('playing');
+    const iframe = document.querySelector('.carousel-item.active iframe');
+    const video = iframe.contentDocument.querySelector('video');
+    if (video) {
+        video.pause();
     }
 }
