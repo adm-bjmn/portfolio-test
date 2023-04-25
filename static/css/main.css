@@ -197,11 +197,7 @@ li {
 
 .skills {
     padding-top: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    margin-right: 5px;
-    margin-right: 5px;
-
+    justify-content: left;
 }
 
 .skills li {
@@ -209,7 +205,6 @@ li {
 }
 
 #django {
-    padding-left: 5px;
     height: 40px;
     object-fit: scale-down;
 }
@@ -429,7 +424,7 @@ li {
     font-size: 35px;
 }
 
-.copywrite_ {
+.copyright_ {
     display: flex;
     width: 95%;
     margin: 0 auto;
