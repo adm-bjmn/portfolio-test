@@ -17,3 +17,7 @@ def home(request):
         return render(request, 'index/home.html', {'name': name})
     else:
         return render(request, 'index/home.html')
+
+
+def image(request):
+    return render(request, 'index/image.html')
