@@ -232,6 +232,11 @@ li {
     object-fit: scale-down;
 }
 
+#js {
+    height: 50px;
+    object-fit: scale-down;
+}
+
 #css {
     height: 50px;
     object-fit: scale-down;
